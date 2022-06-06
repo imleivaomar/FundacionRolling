@@ -1,0 +1,341 @@
+/* colores */
+:root{
+    --verdeOscuro: rgb(95, 113, 97);
+    --verdeOscuro_1: rgb(40, 51, 42);
+    --verdeSuave: rgb(193, 209, 197);
+    --colorClaro: rgb(239, 234, 216);
+    --colorGris: rgb(208, 201, 192);
+}
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+    font-family: 'Libre Baskerville', serif;
+}
+
+body{
+    background-image: url(https://misanimales.com/wp-content/uploads/2020/02/cachorros-jaula-refugio.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+html{
+    width:100vw;
+    height:100vh;
+    font-size: 1rem;
+}
+header{
+    height: 10%;
+}
+main{
+    padding-top:10px;
+    min-height:100vh;
+    background-color:rgb(239, 234, 216);
+    
+}
+
+#navigation{
+    
+    font-size: 20px;
+   background-color: var(--verdeSuave);
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   
+}
+
+#nav_ul{
+    padding: 1.5rem 0;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    
+    list-style: none;
+     
+}
+.nav_item{
+    display: inline-block;
+    font-weight: bold;
+  
+}
+#active{
+  color: white;
+  font-weight:normal;
+}
+.nav_item a{
+    padding:0.2rem 0.5rem;
+    color: var(--verdeOscuro);
+    display: block;
+    transition: all 0.4s linear;
+    text-decoration: none; 
+}
+.nav_item a:hover{
+    color:var(--verdeOscuro_1);
+    text-shadow: 1px 1px currentColor;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size:20px;
+}
+.nav_item a:hover::before{
+  content:'> ';
+}
+
+
+
+
+
+
+section{
+    width: 100%;
+    padding: 10px;    
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+article{
+    
+    width:50%;
+  
+}
+section > div{
+    width: 50%;
+    padding:5px;
+  
+}
+#boton_donar{
+  margin: auto;
+}
+#central {
+    
+    
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section > div > div{
+   
+    padding:5px;
+}
+
+#final {
+    background-color: var(--colorClaro);
+    
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#arriba > div,h1{
+   
+    
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding:10px;
+   
+}
+
+
+
+#arriba > div{
+    padding:20px;
+    
+}
+
+#arriba > h1{
+    font-size: 1.5rem;
+    color: brown;    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+#boton{
+    
+    border-radius: 15px;
+    background-color: rgb(48, 118, 94);
+    padding:10px;
+    color:aliceblue;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all;
+}
+
+#boton:hover{
+    background-color:rgb(78, 146, 146);
+
+}
+#boton:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    /* Lowering the shadow */
+}
+
+
+
+section > #imagenDonar{
+    margin:auto;
+
+}
+
+
+#central > h2{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin:auto;
+}
+
+#text1{
+    font-family:sans-serif;
+    font-size: 1rem;
+    width: 70%;
+    margin:auto
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
+    padding:10px;
+    
+    
+}
+
+
+#monto {
+    border:3px solid rgb(233, 13, 13);
+    border-radius: 30px;
+    width:30%;
+    margin:10px;
+    padding:5px;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
+    
+}
+
+#monto > a{
+    text-decoration: none;
+    color: darkgreen;
+}
+
+#monto:hover{
+    color:rgb(169, 65, 77);
+    border:solid 3px gray;
+}
+
+#monto > a:hover{
+    --verdeOscuro_1: rgb(40, 51, 42);
+}
+
+#text2{
+    width:50%;
+    font-family:sans-serif;
+    color: gray;
+    text-align: center;
+    font-size: large;
+    padding-top:50px;
+}
+
+#final{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
+
+#texto1{
+   
+    
+    border-radius: 30px;
+    width:50%;
+    
+  
+    text-align: center;
+   
+}
+
+
+#texto2{
+    
+    font-family: serif;
+    border-radius: 10%;
+    width:70%;
+    padding:30px;
+    
+
+}
+
+@media screen and (max-width:420px){
+   
+    #imagenDonar{
+        background-image:url("https://previews.123rf.com/images/berkut2011/berkut20111701/berkut2011170100041/69821062-concepto-de-donaci%C3%B3n-mano-que-pone-la-cuenta-de-dinero-en-la-caja-de-donaciones-.jpg") ;
+        width:15rem;
+        height: 10rem;
+        background-size:cover; 
+        
+        border-radius: 40%;
+        box-shadow: 5px 5px 15px 5px #000000;
+    }
+
+    .cards{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;      
+        padding:1px;
+       
+   }
+
+    
+}
+
+/* Breakpoints */
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    header,main,footer{
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+    .header-card .titulo{
+        font-size: 20px;
+    }
+    
+    .header-card .subtitulo{
+        font-size: 15px;
+    }
+    .nav-item a b{
+       font-size: 15px; 
+    }
+    
+}
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    header,main,footer{
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+    .header-card .titulo{
+        font-size: 25px;
+    }
+    
+    .header-card .subtitulo{
+        font-size: 15px;
+    } 
+    .nav-item a b{
+        font-size: 20px; 
+     }
+     
+}
